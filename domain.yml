@@ -1,0 +1,53 @@
+slots:
+  policy_number: 
+    type: text
+  account_name:
+    type: text
+  expiration_date:
+    type: text
+  premium:
+    type: text
+intents:
+  - greet
+  - insurance_status
+  - insurance_search
+  - thankyou
+  - affirm
+  - deny
+  - goodbye
+  - insurance_status+policy
+  - insurance_search+policy
+  - policy
+
+actions:
+- utter_greet
+- utter_did_that_help
+- utter_happy
+- utter_goodbye
+- utter_policy_search
+- utter_searched_policy
+- utter_policy
+- action_check_status
+
+
+templates:
+  utter_greet:
+  - text: "Hey! How can I help you?"
+
+  utter_policy_search:
+  - text: "Sure, please tell me your policy number."
+
+  utter_searched_policy:
+  - text: "Sure, here are the details about your policy"
+
+  utter_policy:
+  - text: "Account name: {account_name}\n Policy Number: {policy_number}\n Premium: {premium}"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great!"
+
+  utter_goodbye:
+  - text: "Bye"

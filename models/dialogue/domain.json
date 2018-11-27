@@ -1,0 +1,30 @@
+{
+  "states": [
+    "intent_affirm",
+    "intent_deny",
+    "intent_goodbye",
+    "intent_greet",
+    "intent_insurance_search",
+    "intent_insurance_search+policy",
+    "intent_insurance_status",
+    "intent_insurance_status+policy",
+    "intent_policy",
+    "intent_thankyou",
+    "slot_account_name_0",
+    "slot_expiration_date_0",
+    "slot_policy_number_0",
+    "slot_premium_0",
+    "prev_action_listen",
+    "prev_action_restart",
+    "prev_action_default_fallback",
+    "prev_action_deactivate_form",
+    "prev_utter_greet",
+    "prev_utter_did_that_help",
+    "prev_utter_happy",
+    "prev_utter_goodbye",
+    "prev_utter_policy_search",
+    "prev_utter_searched_policy",
+    "prev_utter_policy",
+    "prev_action_check_status"
+  ]
+}

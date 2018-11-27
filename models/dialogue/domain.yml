@@ -1,0 +1,69 @@
+%YAML 1.1
+---
+actions:
+- utter_greet
+- utter_did_that_help
+- utter_happy
+- utter_goodbye
+- utter_policy_search
+- utter_searched_policy
+- utter_policy
+- action_check_status
+config:
+  store_entities_as_slots: true
+entities: []
+forms: []
+intents:
+- greet:
+    use_entities: true
+- insurance_status:
+    use_entities: true
+- insurance_search:
+    use_entities: true
+- thankyou:
+    use_entities: true
+- affirm:
+    use_entities: true
+- deny:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- insurance_status+policy:
+    use_entities: true
+- insurance_search+policy:
+    use_entities: true
+- policy:
+    use_entities: true
+slots:
+  account_name:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  expiration_date:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  policy_number:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  premium:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+templates:
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_goodbye:
+  - text: Bye
+  utter_greet:
+  - text: Hey! How can I help you?
+  utter_happy:
+  - text: Great!
+  utter_policy:
+  - text: "Account name: {account_name}\n Policy Number: {policy_number}\n Premium:\
+      \ {premium}"
+  utter_policy_search:
+  - text: Sure, please tell me your policy number.
+  utter_searched_policy:
+  - text: Sure, here are the details about your policy

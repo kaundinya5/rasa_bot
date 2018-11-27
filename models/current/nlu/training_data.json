@@ -1,0 +1,337 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "intent": "greet",
+        "text": "hey"
+      },
+      {
+        "intent": "greet",
+        "text": "hello"
+      },
+      {
+        "intent": "greet",
+        "text": "hi"
+      },
+      {
+        "intent": "greet",
+        "text": "good morning"
+      },
+      {
+        "intent": "greet",
+        "text": "good evening"
+      },
+      {
+        "intent": "greet",
+        "text": "hey there"
+      },
+      {
+        "intent": "insurance_status",
+        "text": "i want to know the status of my insurance"
+      },
+      {
+        "intent": "insurance_status",
+        "text": "what is my status of my insurance"
+      },
+      {
+        "intent": "insurance_status",
+        "text": "show me my insurance status"
+      },
+      {
+        "intent": "insurance_status",
+        "text": "policy status"
+      },
+      {
+        "intent": "insurance_status",
+        "text": "status of my policy"
+      },
+      {
+        "intent": "insurance_status",
+        "text": "status policy"
+      },
+      {
+        "intent": "insurance_status+policy",
+        "entities": [
+          {
+            "start": 17,
+            "end": 27,
+            "value": "CI1550130E",
+            "entity": "policy_number"
+          }
+        ],
+        "text": "policy status of CI1550130E"
+      },
+      {
+        "intent": "insurance_status+policy",
+        "entities": [
+          {
+            "start": 17,
+            "end": 27,
+            "value": "CPS2671639",
+            "entity": "policy_number"
+          }
+        ],
+        "text": "status of policy CPS2671639"
+      },
+      {
+        "intent": "insurance_status+policy",
+        "entities": [
+          {
+            "start": 14,
+            "end": 27,
+            "value": "ACP7821986594",
+            "entity": "policy_number"
+          }
+        ],
+        "text": "status policy ACP7821986594"
+      },
+      {
+        "intent": "insurance_status+policy",
+        "entities": [
+          {
+            "start": 20,
+            "end": 31,
+            "value": "57SBAIC1384",
+            "entity": "policy_number"
+          }
+        ],
+        "text": "status of my policy 57SBAIC1384"
+      },
+      {
+        "intent": "insurance_status+policy",
+        "entities": [
+          {
+            "start": 14,
+            "end": 23,
+            "value": "100355440",
+            "entity": "(policy_number"
+          }
+        ],
+        "text": "policy status 100355440)"
+      },
+      {
+        "intent": "insurance_status+policy",
+        "entities": [
+          {
+            "start": 28,
+            "end": 40,
+            "value": "EBU097711156",
+            "entity": "policy_number"
+          }
+        ],
+        "text": "what is the status of policyEBU097711156"
+      },
+      {
+        "intent": "insurance_search",
+        "text": "show me my insurance"
+      },
+      {
+        "intent": "insurance_search",
+        "text": "i want to know about my insurance"
+      },
+      {
+        "intent": "insurance_search",
+        "text": "tell me about my insurance"
+      },
+      {
+        "intent": "insurance_search",
+        "text": "insurance information"
+      },
+      {
+        "intent": "insurance_search",
+        "text": "i want information about my insurance"
+      },
+      {
+        "intent": "insurance_search+policy",
+        "entities": [
+          {
+            "start": 41,
+            "end": 53,
+            "value": "EBU097711156",
+            "entity": "policy_number"
+          }
+        ],
+        "text": "insurance information with policy number EBU097711156"
+      },
+      {
+        "intent": "insurance_search+policy",
+        "entities": [
+          {
+            "start": 57,
+            "end": 66,
+            "value": "100355440",
+            "entity": "policy_number"
+          }
+        ],
+        "text": "i want information about my insurance with policy number 100355440"
+      },
+      {
+        "intent": "insurance_search+policy",
+        "entities": [
+          {
+            "start": 31,
+            "end": 43,
+            "value": "CPS267163943",
+            "entity": "policy_number"
+          }
+        ],
+        "text": "information about policy numberCPS267163943"
+      },
+      {
+        "intent": "insurance_search+policy",
+        "entities": [
+          {
+            "start": 24,
+            "end": 33,
+            "value": "100355440",
+            "entity": "policy_number"
+          }
+        ],
+        "text": "information about policy100355440"
+      },
+      {
+        "intent": "policy",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "100355440",
+            "entity": "policy_number"
+          }
+        ],
+        "text": "100355440"
+      },
+      {
+        "intent": "policy",
+        "entities": [
+          {
+            "start": 0,
+            "end": 12,
+            "value": "CPS267163943",
+            "entity": "policy_number"
+          }
+        ],
+        "text": "CPS267163943"
+      },
+      {
+        "intent": "policy",
+        "entities": [
+          {
+            "start": 0,
+            "end": 13,
+            "value": "ACP7821986594",
+            "entity": "policy_number"
+          }
+        ],
+        "text": "ACP7821986594"
+      },
+      {
+        "intent": "policy",
+        "entities": [
+          {
+            "start": 0,
+            "end": 12,
+            "value": "EBU097711156",
+            "entity": "policy_number"
+          }
+        ],
+        "text": "EBU097711156"
+      },
+      {
+        "intent": "policy",
+        "entities": [
+          {
+            "start": 0,
+            "end": 10,
+            "value": "CI1550130E",
+            "entity": "policy_number"
+          }
+        ],
+        "text": "CI1550130E"
+      },
+      {
+        "intent": "policy",
+        "entities": [
+          {
+            "start": 0,
+            "end": 10,
+            "value": "EPL1661571",
+            "entity": "policy_number"
+          }
+        ],
+        "text": "EPL1661571"
+      },
+      {
+        "intent": "thankyou",
+        "text": "thanks!"
+      },
+      {
+        "intent": "thankyou",
+        "text": "thank you"
+      },
+      {
+        "intent": "thankyou",
+        "text": "thx"
+      },
+      {
+        "intent": "thankyou",
+        "text": "thanks very much"
+      },
+      {
+        "intent": "affirm",
+        "text": "yes"
+      },
+      {
+        "intent": "affirm",
+        "text": "yes!"
+      },
+      {
+        "intent": "affirm",
+        "text": "ya"
+      },
+      {
+        "intent": "affirm",
+        "text": "yeah"
+      },
+      {
+        "intent": "affirm",
+        "text": "yes it did"
+      },
+      {
+        "intent": "affirm",
+        "text": "it did"
+      },
+      {
+        "intent": "deny",
+        "text": "no"
+      },
+      {
+        "intent": "deny",
+        "text": "nope"
+      },
+      {
+        "intent": "deny",
+        "text": "no it did not"
+      },
+      {
+        "intent": "deny",
+        "text": "no it didn't"
+      },
+      {
+        "intent": "deny",
+        "text": "it didn't"
+      },
+      {
+        "intent": "goodbye",
+        "text": "bye"
+      },
+      {
+        "intent": "goodbye",
+        "text": "goodbye"
+      }
+    ],
+    "regex_features": [],
+    "lookup_tables": [],
+    "entity_synonyms": []
+  }
+}
